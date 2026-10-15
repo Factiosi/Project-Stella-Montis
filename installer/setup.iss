@@ -8,11 +8,11 @@
 ;   --include-package-data=dxcam --include-data-dir=assets=assets
 ;   --output-dir=build --output-filename="Project Stella Montis.exe"
 ;   --company-name=Factiosi --product-name="Project Stella Montis"
-;   --file-version=1.0.0.0 --product-version=1.0.0.0
+;   --file-version=1.0.1.0 --product-version=1.0.1.0
 ;   --file-description="Project Stella Montis" psm.py
 
 #define AppName "Project Stella Montis"
-#define AppVersion "1.0.0"
+#define AppVersion "1.0.1"
 #define AppPublisher "Factiosi"
 #define AppExeName "Project Stella Montis.exe"
 #define BuildDir "..\build\psm.dist"

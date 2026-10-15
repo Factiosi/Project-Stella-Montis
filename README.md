@@ -49,13 +49,13 @@ python -m nuitka --standalone --windows-console-mode=disable `
   --include-package-data=dxcam --include-data-dir=assets=assets `
   --output-dir=build --output-filename="Project Stella Montis.exe" `
   --company-name=Factiosi --product-name="Project Stella Montis" `
-  --file-version=1.0.0.0 --product-version=1.0.0.0 `
+  --file-version=1.0.1.0 --product-version=1.0.1.0 `
   --file-description="Project Stella Montis" psm.py
 ```
 
 `PYTHONPATH` has to include `src`, or Nuitka does not see the packages. `--file-version` and `--product-version` are the number in `pyproject.toml` plus a fourth `.0`. The executable is `build/psm.dist/Project Stella Montis.exe`. `PSM.ini` and `psm_baseline.dat` are not in that folder; the program writes them beside itself when it runs.
 
-The installer is Inno Setup 6: compile `installer/setup.iss` after the folder above exists. The setup file is `installer/output/Project Stella Montis 1.0.0.exe`. The script does not pack `PSM.ini` or the saved ramp.
+The installer is Inno Setup 6: compile `installer/setup.iss` after the folder above exists. The setup file is `installer/output/Project Stella Montis 1.0.1.exe`. The script does not pack `PSM.ini` or the saved ramp.
 
 ---
 
@@ -110,10 +110,10 @@ python -m nuitka --standalone --windows-console-mode=disable `
   --include-package-data=dxcam --include-data-dir=assets=assets `
   --output-dir=build --output-filename="Project Stella Montis.exe" `
   --company-name=Factiosi --product-name="Project Stella Montis" `
-  --file-version=1.0.0.0 --product-version=1.0.0.0 `
+  --file-version=1.0.1.0 --product-version=1.0.1.0 `
   --file-description="Project Stella Montis" psm.py
 ```
 
 `PYTHONPATH` должен включать `src`, иначе Nuitka не видит пакеты. `--file-version` и `--product-version` — номер из `pyproject.toml` и четвёртый компонент `.0`. Файл — `build/psm.dist/Project Stella Montis.exe`. `PSM.ini` и `psm_baseline.dat` в эту папку не входят: программа пишет их рядом с собой при запуске.
 
-Установщик — Inno Setup 6: компилировать `installer/setup.iss`, когда папка выше уже есть. Файл установки — `installer/output/Project Stella Montis 1.0.0.exe`. Скрипт не кладёт в пакет `PSM.ini` и сохранённую рампу.
+Установщик — Inno Setup 6: компилировать `installer/setup.iss`, когда папка выше уже есть. Файл установки — `installer/output/Project Stella Montis 1.0.1.exe`. Скрипт не кладёт в пакет `PSM.ini` и сохранённую рампу.
