@@ -20,7 +20,7 @@ src/kernel/         the OS boundary: window.py (Win32), gamma.py (GDI ramps), ca
 src/modules/        menu.py (ESC detector), weights.py (influence curve → weight grid)
 src/daemon/         engine.py: the loop, State/Status, glide, Applicator
 src/ui/             theme.py, widgets.py, curve.py, overlay.py, app.py
-assets/             esc_template.npy — the ESC outline template (39×62 float32)
+assets/             esc_template.npy — the ESC outline template (39×62 float32); icon.ico — window and executable icon
 docs/               ARCHITECTURE.md
 ```
 

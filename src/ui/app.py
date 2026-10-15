@@ -7,6 +7,7 @@ import tkinter as tk
 from collections.abc import Callable
 
 from core.locale import tr
+from core.paths import ICON_PATH
 from core.settings import (
     CAPTURE_MS_RANGE,
     DIAMETER_RANGE,
@@ -41,6 +42,7 @@ class App(tk.Tk):
     def __init__(self, start_engine: bool = True) -> None:
         super().__init__()
         self.title("Stella Montis")
+        self._apply_icon()
         self.resizable(False, False)
         self.configure(background=BG)
         self._settings = load_settings()
@@ -56,6 +58,17 @@ class App(tk.Tk):
         if start_engine:
             self.engine.start()
             self._refresh_after = self.after(REFRESH_MS, self._refresh)
+
+    def _apply_icon(self) -> None:
+        """Caption, Alt-Tab, and taskbar. `default` is the class icon; the second call is this frame."""
+        if not ICON_PATH.is_file():
+            return
+        path = str(ICON_PATH)
+        try:
+            self.iconbitmap(default=path)
+            self.iconbitmap(path)
+        except tk.TclError:
+            return
 
     # --- layout ------------------------------------------------------------------
 

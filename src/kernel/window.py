@@ -10,6 +10,7 @@ import ctypes
 from ctypes import wintypes
 
 PROCESS_NAME = "PioneerGame.exe"
+APP_USER_MODEL_ID = "Factiosi.ProjectStellaMontis"
 
 user32 = ctypes.windll.user32
 kernel32 = ctypes.windll.kernel32
@@ -67,6 +68,11 @@ class PROCESSENTRY32W(ctypes.Structure):
 kernel32.CreateToolhelp32Snapshot.restype = wintypes.HANDLE
 kernel32.Process32FirstW.argtypes = [wintypes.HANDLE, ctypes.POINTER(PROCESSENTRY32W)]
 kernel32.Process32NextW.argtypes = [wintypes.HANDLE, ctypes.POINTER(PROCESSENTRY32W)]
+
+
+def set_app_user_model_id() -> None:
+    """Own taskbar identity. Call before any HWND, or Windows keeps the python.exe icon."""
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(APP_USER_MODEL_ID)
 
 
 def enable_dpi_awareness() -> None:

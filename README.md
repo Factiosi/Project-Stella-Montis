@@ -32,7 +32,7 @@ Saved to `PSM.ini` next to the program on every change.
 | `src/modules/` | Menu detector, influence curve |
 | `src/daemon/` | The background loop |
 | `src/ui/` | The window |
-| `assets/` | ESC outline template |
+| `assets/` | ESC outline template, window icon |
 
 How the loop is wired: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
@@ -72,6 +72,6 @@ Project Stella Montis (PSM) меняет гамму монитора, пока A
 | `src/modules/` | Детектор меню, кривая влияния |
 | `src/daemon/` | Фоновый цикл |
 | `src/ui/` | Окно |
-| `assets/` | Шаблон контура ESC |
+| `assets/` | Шаблон контура ESC, значок окна |
 
 Как устроен цикл: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
