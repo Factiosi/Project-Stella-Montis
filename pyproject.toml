@@ -1,6 +1,6 @@
 [project]
 name = "stella-montis"
-version = "1.0.1"
+version = "1.0.2-dev"
 description = "Display gamma that follows on-screen brightness while Arc Raiders is in front."
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.26", "comtypes>=1.4", "dxcam==0.3.0"]
