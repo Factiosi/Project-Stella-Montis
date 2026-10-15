@@ -10,6 +10,13 @@ PSM.ini
 psm_baseline.dat
 psm_baseline.dat.tmp
 
+# Nuitka and the Inno output. The installer script stays; the built tree does not.
+build/
+installer/output/
+*.build/
+*.dist/
+*.onefile-build/
+
 # OS / editor
 .DS_Store
 Thumbs.db
