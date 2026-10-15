@@ -50,7 +50,7 @@ Scratch scripts and screenshots stay outside the repository.
 
 ## Version
 
-The manifest is `pyproject.toml`. This line is `1.0.0-dev` on `experimental`. That number is not tagged. A release is a later commit `Release 1.0.0` on `main` and the tag `v1.0.0`. Work commits do not carry a version number. The Nuitka tree is `build/psm.dist`; `installer/setup.iss` packages it and is not run from here.
+The manifest is `pyproject.toml`. The number there is `1.0.0`. A release commit is `Release 1.0.0` on `main`, with the tag `v1.0.0`. Work commits do not carry a version number. The Nuitka tree is `build/psm.dist`; `installer/setup.iss` packages it and is not run from here.
 
 ## What not to bring back
 
