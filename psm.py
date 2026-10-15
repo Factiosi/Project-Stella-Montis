@@ -13,6 +13,9 @@ if str(SRC) not in sys.path:
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    from core.paths import prepare_install_layout
+
+    prepare_install_layout()
     from kernel.window import enable_dpi_awareness, set_app_user_model_id
 
     set_app_user_model_id()

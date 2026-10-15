@@ -26,7 +26,7 @@ docs/               ARCHITECTURE.md
 
 Layers import downwards only: `ui → daemon → modules/kernel → core`. `core` imports nothing from the others except `modules.weights` for the curve type.
 
-`PSM.ini` and `psm_baseline.dat` are runtime state next to `psm.py`. They are not committed.
+`PSM.ini` and `psm_baseline.dat` are runtime state next to `psm.py` in source runs. In a Nuitka install they live under `%LOCALAPPDATA%\\Project Stella Montis`. They are not committed.
 
 ## How to continue
 
@@ -50,7 +50,7 @@ Scratch scripts and screenshots stay outside the repository.
 
 ## Version
 
-The manifest is `pyproject.toml`. The number there is `1.0.0`. A release commit is `Release 1.0.0` on `main`, with the tag `v1.0.0`. Work commits do not carry a version number. The Nuitka tree is `build/psm.dist`; `installer/setup.iss` packages it and is not run from here.
+The manifest is `pyproject.toml`. This line is `1.0.1-dev` on `experimental`. A release is a later commit `Release 1.0.1` on `main` and the tag `v1.0.1`. Work commits do not carry a version number. The Nuitka tree is `build/psm.dist`; `installer/setup.iss` packages it and is not run from here.
 
 ## What not to bring back
 
